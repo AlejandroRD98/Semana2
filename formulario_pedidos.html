@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedidos</title>
+</head>
+
+<style>
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fondo_espacio{
+    background: url(./Fondos/espacio.png);
+    height: 40%;
+    width:;
+
+}
+.column2 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+    vertical-align: middle;
+}
+#heading { color: #ffffff; }
+</style>
+
+<body style="background-color: rgba(29, 41, 81, 0.5);">
+
+  <h1 style="text-align:center;color:#ffffff">Pasteleria El Lado Oscuro de la Masa</h1>
+    <div class="fondo_espacio">
+        <div> 
+            <table class="center">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><h3 style="color:#ffffff"><i>Productos</i></h3></td>
+                    <td rowspan="2"> <img src="https://github.com/AlejandroRD98/Semana2/blob/main/logo_oscuro.png?raw=true" alt="Logo pasteleria" width="300px" height="300px"></td>
+                    <td><h3 style="color:#DA0063"><i>Sucursales</h3></i></td>
+                </tr>
+                <tr>
+                    <td><h3 style="color:#DA0063"><i>Promociones</i></h3></td>
+                    <td><h3 style="color:#ffffff"><i>Pedidos en linea</i></h3></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+
+    <h1 id="heading">Formulario de pedidos</h1>
+
+    <div style="background-color: rgba(230, 230, 230, 0.7)";>
+        <h2>Datos clientes</h2><br>
+        <label for="Nombre"> Nombre(s)</label>
+        <input type="text" id="Nombre" name="Nombre">
+        <label for="ApellidoM"> Apellido Paterno</label>
+        <input type="text" id="ApellidoM" name="ApellidoM">
+        <label for="ApellidoP"> Apellido Materno</label>
+        <input type="text" id="ApellidoP" name="ApellidoP">
+        <br><br>
+
+        <label for="tel1">Telefono de contcato</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10">
+        <label for="correo1">Correo electronico</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+
+        <label for="Descripccion"> Descripcción del pastel</label><br>
+        <textarea name="comentarios" rows="10" cols="40"></textarea><br><br>
+
+        <label for="personas">Número de personas</label> 
+        <input type="number" id="personas" name="personas">
+        <label for="fecha_entrega">Fecha de entrega</label> 
+        <input type="date" id="fecha_entrega" name="fecha_entrega"><br>
+
+
+        <h2>Selección del sabor</h2>
+        <p>Puede combinar dos sabores diferentes para el pan</p><br>
+        <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+        <label for="topping1">Pan de Chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Vainilla">
+        <label for="topping2">Pan de Vainilla</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Red Velvet">
+        <label for="topping3">Pan Red Velvet</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Limon">
+        <label for="topping4">Pan de Limón</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Fresa">
+        <label for="topping5">Pan de Fresa</label><br>
+        <input type="checkbox" id="topping6" name="topping6" value="Arcoiris">
+        <label for="topping6">Pan Arcoiris</label><br><br>
+
+        <h2>Elección de Decoraciones</h2>
+        <p>Puede seleccionar la cantidad que desee de decoraciones</p><br>
+        <input type="checkbox" id="decoracion1" name="decoracion1" value="CremaMantequilla">
+        <label for="decoracion1">Cubierta de Crema de Mantequilla</label><br>
+        <input type="checkbox" id="decoracion2" name="decoracion2" value="Fondant">
+        <label for="decoracion">Cubierta de Fondant</label><br>
+        <input type="checkbox" id="decoracion3" name="decoracion3" value="Manga">
+        <label for="decoracion3">Decoración con Manga Pastelera</label><br>
+        <input type="checkbox" id="decoracion4" name="decoracion4" value="FloresFondant">
+        <label for="decoracion4">Flores de Fondant.</label>
+        <input type="number" id="NumFlor" name="NumFlor"><br>
+        <input type="checkbox" id="decoracion5" name="decoracion5" value="Fruta">
+        <label for="decoracion5">Fruta Fresca</label>
+        <select id="decoracion5" name="decoracion5">
+        <option value="Fresa">Fresa</option>
+        <option value="Durazno">Durazno</option>
+        <option value="Kiwi">Kiwi</option>
+        <option value="Combinado">Combinado</option>
+        </select>
+        <br>
+        <input type="checkbox" id="decoracion6" name="decoracion6" value="Arcoiris">
+        <label for="decoracion6">Cubierta Espejo de Chocolate</label><br><br>
+
+        <h2>Finalizar pedido</h2>
+        <input type="button" id="boton1" name="boton1" value="Ordenar"><br><br>
+
+        
+           
+            
+    
+        <div class="fondo_espacio">
+          <div class="row2">
+              <div class="column2"> <img src="https://github.com/AlejandroRD98/Semana2/blob/main/logo_oscuro.png?raw=true" alt="Logo pasteleria" width="300px" height="300px"></div>
+              <div class="column2">
+                  <ul>
+                      <li><p style="color: #ffffff; vertical-align: middle;"><img src="https://github.com/AlejandroRD98/Semana2/blob/main/Icons/whatsapp.png?raw=true" alt="whatsapp" width="75px" height="75px">2225640785 </p> </li>
+                      <li><img src="https://github.com/AlejandroRD98/Semana2/blob/main/Icons/facebook.png?raw=true" alt="whatsapp" width="75px" height="75px"> <a href="https://www.facebook.com/La-Imperial-Pasteler%C3%ADa-112911437221407" style="color:#DA0063;"> El lado Oscuro de la Masa</a></li>
+                      <li><img src="https://github.com/AlejandroRD98/Semana2/blob/main/Icons/instagram.png?raw=true" alt="whatsapp" width="75px" height="75px"><a href="https://www.instagram.com/lapasteleria_tzb/" style="color:#fff;">El lado Oscuro de la Masa</a></li>
+                      </ul>
+              </div>
+              <div class="column2">
+                  <h2 style="color: #ffffff;">Nuestras Sucursal</h2>
+                  <p style="color:#ffffff;">Blvrd de la Campana 660 </p>
+                  <p style="color:#ffffff;">Jurica Acueducto Juriquilla, Qro. #76230</p>
+  
+  
+              </div>
+              <div class="column2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0347590084043!2d-100.44447948515115!3d20.708813086172597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35761076e2b77%3A0x2ee0f3ac6e310fdc!2sBlvrd%20de%20la%20Campana%2C%20Jurica%20Acueducto%2C%20Juriquilla%2C%20Qro.!5e0!3m2!1sen!2smx!4v1646281007383!5m2!1sen!2smx"  width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" align="right"></iframe></div>
+        </div>
+      </div>
+
+    </div>
