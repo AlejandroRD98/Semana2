@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El lado oscuro de la masa</title>
+</head>
+
+<style>
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fondo_espacio{
+    background: url(./Fondos/espacio.png);
+    height: 100%;
+    width: 100%;
+
+}
+
+.logo{
+    float:left;
+}
+
+.mapa{
+    float: right;
+}
+
+.info{
+    floar:center;
+    height:100px;
+    width:100px;
+    
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.block-center {
+    text-align: left;
+    margin: auto;
+    display: inline-block;
+}
+#heading { color: #ffffff; }
+
+
+</style>
+
+<body style="background-color: rgba(29, 41, 81, 0.5);">
+
+    <h1 style="text-align:center;color:#ffffff">Pasteleria El Lado Oscuro de la Masa</h1>
+    <div class="fondo_espacio">
+        <div> 
+            <table class="center">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><h3 style="color:#ffffff"><i>Productos</i></h3></td>
+                    <td rowspan="2"> <img src="./logo_oscuro.png" alt="Logo pasteleria" width="300px" height="300px"></td>
+                    <td><h3 style="color:#DA0063"><i>Sucursales</h3></i></td>
+                </tr>
+                <tr>
+                    <td><h3 style="color:#DA0063"><i>Promociones</i></h3></td>
+                    <td><h3 style="color:#ffffff"><i>Pedidos en linea</i></h3></td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+        <h2 style= "text-align:center"> Pedidos en linea</h2>
+        </div>
+    </div>
+
+    <h1 id ="heading" style="text-align:center">Nuestros pasteles</h1>
+
+    <div class="fondo_espacio">
+        <h2 id ="heading">Nuestros sabores</h2>
+        <div class="row">
+            <div class="column">
+            <img src="./Sabores/chocolate.png" alt="chocolate" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Pan de chocolate</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $10.00 por persona</p>
+
+            </div>
+            <div class="column">
+            <img src="./Sabores/Vanilla.jpg" alt="Vanilla" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading" { color: #ffffff; }>Pan de Vainilla</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $8.00 por persona</p>
+            </div>
+            <div class="column">
+            <img src="./Sabores/RedV.png" alt="Red Velvet" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Pan Red Velvet</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $15.00 por persona</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+            <img src="./Sabores/limon.png" alt="limon" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Pan de Limon</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $11.00 por persona</p>
+
+            </div>
+            <div class="column">
+            <img src="./Sabores/fresa.png" alt="fresa" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Pan de Fresa</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $13.00 por persona</p>
+            </div>
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/arcoiris.png" alt="arcoiris" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Pan Arcoiris</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $25.00 por persona</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="fondo_espacio">
+        <h2 id ="heading">Nuestros adornos</h2>
+        <div class="row">
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/flores.png.jpg" alt="flores_fondant" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Flores de Fondant</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $55.00 por flor</p>
+
+            </div>
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/cubierta_fondant.jpg" alt="cubierta_fondant" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Cubierta de Fondant varios colores</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $35.00 por persona</p>
+            </div>
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/decoracion.png" alt="decoracion_manga" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Decoración en manga pastelera (variedad de figuras)</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $25.00- $100.00 por persona</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/fruta.png" alt="fruta" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Fruta fresca</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $15.00-$75.00 por pieza</p>
+
+            </div>
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/espejo.png" alt="espejo_chocolate" style="width:50%" class="center">
+            <p  style="text-align:center" id ="heading">Cubierta de Espejo de Chocolate</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $65.00 por persona</p>
+            </div>
+            <div class="column">
+            <img src="https://github.com/AlejandroRD98/Semana2/blob/main/Decoraciones/crema.png" alt="crema" style="width:50%" class="center">
+            <p  style="text-align:center"id ="heading" >Cubierta de Crema de mantequilla</p><br>
+            <p  style="text-align:center" id ="heading">Precio: $15.00 por persona</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Realiza tu pedido aquí</h2>
+
+    <a href="./formulario_pedidos.html"><input type="button" id="boton1" name="boton1" value="Pedir"> </a><br><br>
+
+    <div class="fondo_espacio">
+        <div class="row2">
+            <div class="column2"> <img src="./logo_oscuro.png" alt="Logo pasteleria" width="300px" height="300px"></div>
+            <div class="column2">
+                <ul>
+                    <li><p style="color: #ffffff; vertical-align: middle;"><img src="./Icons/whatsapp.png" alt="whatsapp" width="75px" height="75px">2225640785 </p> </li>
+                    <li><img src="./Icons/facebook.png" alt="whatsapp" width="75px" height="75px"> <a href="https://www.facebook.com/La-Imperial-Pasteler%C3%ADa-112911437221407" style="color:#DA0063;"> El lado Oscuro de la Masa</a></li>
+                    <li><img src="./Icons/instagram.png" alt="whatsapp" width="75px" height="75px"><a href="https://www.instagram.com/lapasteleria_tzb/" style="color:#fff;"></a></li>
+                    </ul>
+            </div>
+            <div class="column2">
+                <h2 style="color: #ffffff;">Nuestras Sucursal</h2>
+                <p style="color:#ffffff;">Blvrd de la Campana 660 </p>
+                <p style="color:#ffffff;">Jurica Acueducto Juriquilla, Qro. #76230</p>
+
+
+            </div>
+            <div class="column2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0347590084043!2d-100.44447948515115!3d20.708813086172597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35761076e2b77%3A0x2ee0f3ac6e310fdc!2sBlvrd%20de%20la%20Campana%2C%20Jurica%20Acueducto%2C%20Juriquilla%2C%20Qro.!5e0!3m2!1sen!2smx!4v1646281007383!5m2!1sen!2smx"  width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" align="right"></iframe></div>
+      </div>
+    </div>
+</body>
+
